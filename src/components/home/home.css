@@ -175,19 +175,15 @@
         order: initial;
         justify-self: center;
         margin-right: 120px;
+        box-shadow: inset 0 0 0 6px rgb(255,255,255 / 3%);
+        width: 200px;
+        height: 200px;
+
     }
 
     .home__data {
         grid-column: 1/3;
         justify-self: center;
-    }
-
-    .home__img{
-        box-shadow: inset 0 0 0 6px rgb(255,255,255 / 3%);
-        width: 200px;
-        height: 200px;
-
-         
     }
 
     .home__scroll {
@@ -198,10 +194,13 @@
 }
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 441px) {
     .home__img {
         width: 180px;
         height: 180px;
+        order: initial;
+        justify-self: center;
+        margin-right: 25px;
 
     }
 
