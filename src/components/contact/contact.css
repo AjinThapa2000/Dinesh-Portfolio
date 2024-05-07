@@ -64,5 +64,11 @@
     
 }
 
+@media screen and (max-width: 441px) {
 
+.contact__card-data{
+    text-decoration: none;
+}
+
+}
 
