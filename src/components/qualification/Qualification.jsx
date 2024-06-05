@@ -33,15 +33,15 @@ const Qualification = () => {
                       initiallyVisible={true}
                     > */}
                   <article className={classes.timeline_entry}>
-                    <div className={`${classes.timeline_icon} ${classes.timeline_icon_5}`}>
+                    <div className={`${classes.timeline_icon} ${classes.timeline_icon_6}`}>
                       <MdWork />
                     </div>
                     <div className={classes.label}>
                       <h2>
-                        Front-End Development Intern (remote) <span>September 2023-December 2023</span>
+                        Front-End Development (remote) <span>September 2023-April 2023</span>
                       </h2>
                       <p>
-                        I had completed internship in <b>Front-End Development</b> at{' '}
+                        Worked as <b>Front-End Development</b> at{' '}
                         <a target='_blank' href='https://www.opportumeety.com/'>
                           <b>Opportumeety</b>
                         </a>{' '}
@@ -52,6 +52,30 @@ const Qualification = () => {
                             balance in the Digital Age, and finally, to overcome the global challenges as a global
                             community. With the aim to make a joyful and sustainable world.)
                         </i>{' '}
+                      </p>
+                    </div>
+                  </article>
+                  {/* </ScrollAnimation> */}
+                  {/* <ScrollAnimation
+                      offset={0}
+                      animateIn='fadeInLeft'
+                      duration={2.4}
+                      animateOnce={true}
+                      initiallyVisible={true}
+                    > */}
+
+<article className={classes.timeline_entry}>
+                    <div className={`${classes.timeline_icon} ${classes.timeline_icon_5}`}>
+                      <MdWork />
+                    </div>
+                    <div className={classes.label}>
+                      <h2>
+                        Frelancing <span>April 2021-Augest 2023</span>
+                      </h2>
+                      <p>
+                      Freelance Web Developer with year of experience in designing, developing, and maintaining web applications for a diverse range of clients. 
+                      Proficient in multiple programming languages and frameworks, including Django, Python, HTML, CSS, JavaScript, Node.js and React. Adept at 
+                      managing all phases of the project lifecycle, from initial client consultation to final deployment and maintenance.
                       </p>
                     </div>
                   </article>
