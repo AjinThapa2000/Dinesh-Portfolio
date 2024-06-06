@@ -38,7 +38,7 @@ const Qualification = () => {
                     </div>
                     <div className={classes.label}>
                       <h2>
-                        Front-End Development (remote) <span>September 2023-April 2023</span>
+                        Front-End Development (remote) <span>September 2023-April 2024</span>
                       </h2>
                       <p>
                         Worked as <b>Front-End Development</b> at{' '}
@@ -64,29 +64,7 @@ const Qualification = () => {
                       initiallyVisible={true}
                     > */}
 
-<article className={classes.timeline_entry}>
-                    <div className={`${classes.timeline_icon} ${classes.timeline_icon_5}`}>
-                      <MdWork />
-                    </div>
-                    <div className={classes.label}>
-                      <h2>
-                        Frelancing <span>April 2021-Augest 2023</span>
-                      </h2>
-                      <p>
-                      Freelance Web Developer with year of experience in designing, developing, and maintaining web applications for a diverse range of clients. 
-                      Proficient in multiple programming languages and frameworks, including Django, Python, HTML, CSS, JavaScript, Node.js and React. Adept at 
-                      managing all phases of the project lifecycle, from initial client consultation to final deployment and maintenance.
-                      </p>
-                    </div>
-                  </article>
-                  {/* </ScrollAnimation> */}
-                  {/* <ScrollAnimation
-                      offset={0}
-                      animateIn='fadeInLeft'
-                      duration={2.4}
-                      animateOnce={true}
-                      initiallyVisible={true}
-                    > */}
+
                   <article className={classes.timeline_entry}>
                     <div className={`${classes.timeline_icon} ${classes.timeline_icon_4}`}>
                       <FaSchool />
@@ -104,6 +82,29 @@ const Qualification = () => {
                      
                     </div>
                   </article>
+                  <article className={classes.timeline_entry}>
+                    <div className={`${classes.timeline_icon} ${classes.timeline_icon_5}`}>
+                      <MdWork />
+                    </div>
+                    <div className={classes.label}>
+                      <h2>
+                        Frelancing <span>Augest 2021-September 2022</span>
+                      </h2>
+                      <p>
+                      Freelance Web Developer with year of experience in designing, developing, and maintaining web applications for a diverse range of clients. 
+                      Proficient in multiple programming languages and frameworks, including Django, Python, HTML, CSS, JavaScript, Node.js and React. Adept at 
+                      managing all phases of the project lifecycle, from initial client consultation to final deployment and maintenance.
+                      </p>
+                    </div>
+                  </article>
+                  {/* </ScrollAnimation> */}
+                  {/* <ScrollAnimation
+                      offset={0}
+                      animateIn='fadeInLeft'
+                      duration={2.4}
+                      animateOnce={true}
+                      initiallyVisible={true}
+                    > */}
                   <article className={classes.timeline_entry}>
                     <div className={classes.timeline_icon}>
                       <MdWork />
