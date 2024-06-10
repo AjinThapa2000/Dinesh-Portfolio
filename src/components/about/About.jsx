@@ -28,7 +28,7 @@ const About = () => {
             and bring impactful ideas to fruition.
           </p>
 
-          <a href="https://drive.google.com/file/d/1xBvnKvLhzuR3Pxecg5DGwiDWWu5U6llO/view?usp=drive_link" target="_blank" className="button button--flex">
+          <a href="https://drive.google.com/file/d/1oM4P-bzBgPWHSUdy7WqarAih9GUKULcw/view" target="_blank" className="button button--flex">
             My Resume
             <svg
                 class="button__icon"
