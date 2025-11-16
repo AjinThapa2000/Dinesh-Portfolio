@@ -1,145 +1,109 @@
-import React from 'react'
+import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import 'animate.css/animate.min.css';
-import classes from'./project.module.css';
+import classes from './project.module.css';
 import Proj1 from "../../assets/img1.png";
 import Proj2 from "../../assets/img2.PNG";
 import Proj3 from "../../assets/img3.png";
 import Proj4 from "../../assets/img4.PNG";
 import Proj5 from "../../assets/img5.gif";
 import Proj6 from "../../assets/img6.png";
-import Proj7 from "../../assets/cornerstone.png"
-import github from '../../assets/github.png'
-import './project.module.css';
+import Proj7 from "../../assets/cornerstone.png";
+import github from '../../assets/github.png';
 
+const projects = [
+  {
+    name: "Cornerstone Academy Trust",
+    image: Proj7,
+    description: 'A school website serving as an online hub for students, parents, and teachers with essential info, resources, and communication tools.',
+    stack: ['LocalStorage', 'Clock', 'User Input Note'],
+    color: '#003848',
+    livePreview: 'https://tcat.education/'
+  },
+  {
+    name: "Work Scheduler",
+    image: Proj1,
+    description: 'A simple daily planner to help users organize their workday.',
+    stack: ['LocalStorage', 'Clock', 'User Input Note'],
+    color: '#C1A4AA',
+    sourceCode: 'https://github.com/AjinThapa2000/work-scheduler',
+    livePreview: 'https://ajinthapa2000.github.io/work-scheduler/'
+  },
+  {
+    name: "Password Generator",
+    image: Proj2,
+    description: 'Generates unique strong passwords up to 64 characters for maximum security.',
+    stack: ['Frontend', 'Character Combination', 'Password Length'],
+    color: '#0FFFFF',
+    sourceCode: 'https://github.com/AjinThapa2000/Unique-Password-Generetor',
+    livePreview:'https://ajinthapa2000.github.io/Unique-Password-Generetor/'
+  },
+  {
+    name: "Weather Forecast",
+    image: Proj3,
+    description:'View 5-day weather forecasts for any city.',
+    stack: ['LocalStorage', 'OpenWeather API', 'Google Map API'],
+    color: '#E5E483',
+    sourceCode: 'https://github.com/AjinThapa2000/WeatherForecast',
+    livePreview:'https://ajinthapa2000.github.io/WeatherForecast/'
+  },
+  {
+    name: "Time Quiz",
+    image: Proj4,
+    description:'Play time-based quizzes and score points before the clock runs out.',
+    stack: ['Frontend', 'Option Selection', 'Clock Timeout'],
+    color: '#D2E0FB',
+    sourceCode: 'https://github.com/AjinThapa2000/Play-Time-Quiz',
+    livePreview:'https://ajinthapa2000.github.io/Play-Time-Quiz/'
+  },
+  {
+    name: "README Generator",
+    image: Proj5,
+    description:'Create dynamic README files for your projects.',
+    stack: ['npm', 'Node.js', 'Command-line Readme'],
+    color: '#FEA1A1',
+    sourceCode: 'https://github.com/AjinThapa2000/Dynamically-generated-ReadMe'
+  },
+  {
+    name: "Food-Cocktails API",
+    image: Proj6,
+    description:'Get instructions on making different foods and cocktails at home.',
+    stack: ['Food API', 'Cocktails API', 'Local Storage'],
+    color: '#D3D3D3',
+    sourceCode: 'https://github.com/AjinThapa2000/Food-Cocktails-API/settings/pages',
+    livePreview:'https://ajinthapa2000.github.io/Food-Cocktails-API/'
+  }
+];
 
 const Project = () => {
-    const project = [
-        {
-          name: "Cornerstone Academy Trust",
-          image: Proj7,
-          description: 'A school website serves as an online hub for students, parents, and teachers, providing essential information about the school, including programs, events, and announcements. It offers resources such as homework, timetables, and educational materials to support learning. The website also facilitates communication within the school community through contact forms and messaging systems.',
-          stack: ['localstorage', 'Clock', 'User input note'],
-          color: '#003848',
-          livePreview: 'https://tcat.education/'
-          
-        },
-
-
-        {
-          name: "Wrok Scheduler",
-          image: Proj1,
-          description: 'This website application is a straightforward daily planner intended to assist users in planning their workdays.',
-          stack: ['localstorage', 'Clock', 'User input note'],
-          color: '#C1A4AA',
-          sourceCode: 'https://github.com/AjinThapa2000/work-scheduler',
-          livePreview: 'https://ajinthapa2000.github.io/work-scheduler/'
-          
-        },
-        {
-          name: "Password Generator",
-          image:Proj2,
-          description:
-          'Unique Password Generator is program that generate unique strong password for your security. Password of length 64 char can be create using this program.',
-          stack: ['FrontEnd','Character Combination','Password Length'],
-          color: '#0FFFFF',
-          sourceCode: 'https://github.com/AjinThapa2000/Unique-Password-Generetor',
-          livePreview:'https://ajinthapa2000.github.io/Unique-Password-Generetor/'
-        },
-        {
-          name: "WeatherForecast",
-          image:Proj3,
-          description:'View 5 days weather forecast of the city based on your search input.',
-          stack: ['localstorage', 'Openweather API', 'Google Map API'],
-          color: '#E5E483',
-          sourceCode: 'https://github.com/AjinThapa2000/WeatherForecast',
-          livePreview:'https://ajinthapa2000.github.io/WeatherForecast/'
-        },
-        {
-          name: "Time Quiz",
-          image:Proj4,
-          description:'Play time Quiz and obtain high score based on given time clock',
-          stack: ['Frontend', 'Option Selection','Clock Timeout'],
-          color: '#D2E0FB',
-          sourceCode: 'https://github.com/AjinThapa2000/Play-Time-Quiz',
-          livePreview:'https://ajinthapa2000.github.io/Play-Time-Quiz/'
-        },
-        {
-          name: "README_Generator",
-          image:Proj5,
-          description:'Create dynamic readme file for your project.',
-          stack: ['nmp-i','node-16','Command-line Readme'],
-          color: '#FEA1A1',
-          sourceCode: 'https://github.com/AjinThapa2000/Dynamically-generated-ReadMe'
-        },
-        {
-          name: "Food-Cocktails-API",
-          image:Proj6,
-          description:'Get instruction about how to make different food and cocktails at home.',
-          stack: ['Food-API', 'Cocktails-API', 'Local storage'],
-          color: '#D3D3D3',
-          sourceCode: 'https://github.com/AjinThapa2000/Food-Cocktails-API/settings/pages',
-          livePreview:'https://ajinthapa2000.github.io/Food-Cocktails-API/'
-        },
-      
-        
-      ];
-  const getProjectCard = (cardItem) => {    
   return (
-    <Tilt perspective={900} glareEnable={true} glareMaxOpacity={0.45}>
-          <li style={{ backgroundColor: cardItem.color, borderRadius: '21px' }}>
-            <a href={cardItem.livePreview} className={classes.card} target='_blank'>
-              <img src={cardItem.image} className={classes.card__image} alt='' />
-            </a>
-            <div
-              onClick={() => {
-                if (cardItem?.sourceCode) window.open(cardItem?.sourceCode, '_blank');
-              }}
-              className={classes.card__title__container}
-            >
-              <h3 className={classes.card__title}>{cardItem.name}</h3>
-              {cardItem?.sourceCode && <img src={github} className={classes.card__title__img} />}
-            </div>
-          </li>
-        </Tilt>
-    );
-}
-return (
-  <section className="project section" id="project">
-    <h2 className="section__title">My Project Gallary </h2>
-    <span className="section__subtitle">Exploring Creativity</span>
-    <div className="project__container container ">
-      <div className="project__content">
-        <div className={classes.box} id='projects'>
-          {/* <ScrollAnimation
-          offset={0}
-          animateIn='fadeInLeft'
-          duration={2.4}
-          animateOnce={true}
-          initiallyVisible={true}
-          > */
-          } 
-            
-          <ul className={classes.cards}>
-            {project.map((item) => {
-              return getProjectCard(item);
-            })}
-          </ul>
-        </div>
+    <section className="project section" id="project">
+      <h2 className="section__title">My Project Gallery</h2>
+      <span className="section__subtitle">Exploring Creativity</span>
+
+      <div className="project__container container">
+        <ul className={classes.cards}>
+          {projects.map((item, index) => (
+            <Tilt key={index} perspective={900} glareEnable={true} glareMaxOpacity={0.3}>
+              <li 
+                className={classes.cardWrapper} 
+                style={{ backgroundColor: item.color }}
+              >
+                <a href={item.livePreview || '#'} className={classes.cardLink} target="_blank" rel="noopener noreferrer">
+                  <img src={item.image} className={classes.cardImage} alt={item.name} />
+                </a>
+                <div className={classes.cardInfo}>
+                  <h3 className={classes.cardTitle}>{item.name}</h3>
+                  {item.sourceCode && <img src={github} className={classes.githubIcon} alt="Github Link" onClick={() => window.open(item.sourceCode, '_blank')} />}
+                  <p className={classes.cardDescription}>{item.description}</p>
+                </div>
+              </li>
+            </Tilt>
+          ))}
+        </ul>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
-    
-    
-
-  
-}
-
-export default Project
-
-
-
-
-  
+export default Project;
