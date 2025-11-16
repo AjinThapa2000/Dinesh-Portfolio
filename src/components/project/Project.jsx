@@ -8,12 +8,24 @@ import Proj3 from "../../assets/img3.png";
 import Proj4 from "../../assets/img4.PNG";
 import Proj5 from "../../assets/img5.gif";
 import Proj6 from "../../assets/img6.png";
+import Proj7 from "../../assets/cornerstone.png"
 import github from '../../assets/github.png'
 import './project.module.css';
 
 
 const Project = () => {
     const project = [
+        {
+          name: "Cornerstone Academy Trust",
+          image: Proj7,
+          description: 'A school website serves as an online hub for students, parents, and teachers, providing essential information about the school, including programs, events, and announcements. It offers resources such as homework, timetables, and educational materials to support learning. The website also facilitates communication within the school community through contact forms and messaging systems.',
+          stack: ['localstorage', 'Clock', 'User input note'],
+          color: '#003848',
+          livePreview: 'https://tcat.education/'
+          
+        },
+
+
         {
           name: "Wrok Scheduler",
           image: Proj1,

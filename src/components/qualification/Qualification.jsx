@@ -33,6 +33,27 @@ const Qualification = () => {
                       initiallyVisible={true}
                     > */}
                   <article className={classes.timeline_entry}>
+                      <div className={`${classes.timeline_icon} ${classes.timeline_icon_4}`}>
+                        <FaSchool />
+                      </div>
+                      <div className={classes.label}>
+                        <h2>
+                           Web and Web App Developer <span> Aug 2024- Till now</span>
+                        </h2>
+                      
+                        <p>
+                        built and maintained responsive, user-friendly websites and Web Application in
+                        <a href='https://tcat.education/'><b>Cornerstone Academy Trust</b> 
+                        </a> 
+                        that supported the Trust’s digital communication and operational needs. customizing WordPress plugins, automated workflows, and integrated REST 
+                        APIs to streamline processes such as job applications, event management, and content updates.
+                        </p>
+                      
+                      </div>
+                  </article>
+
+
+                  <article className={classes.timeline_entry}>
                     <div className={`${classes.timeline_icon} ${classes.timeline_icon_6}`}>
                       <MdWork />
                     </div>
@@ -63,8 +84,7 @@ const Qualification = () => {
                       animateOnce={true}
                       initiallyVisible={true}
                     > */}
-
-
+                  
                   <article className={classes.timeline_entry}>
                     <div className={`${classes.timeline_icon} ${classes.timeline_icon_4}`}>
                       <FaSchool />
