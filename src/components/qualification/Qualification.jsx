@@ -42,7 +42,7 @@ const Qualification = () => {
                         </h2>
                       
                         <p>
-                        built and maintained responsive, user-friendly websites and Web Application in
+                        Built and maintained responsive, user-friendly websites and Web Application in
                         <a href='https://tcat.education/'><b>Cornerstone Academy Trust</b> 
                         </a> 
                         that supported the Trust’s digital communication and operational needs. customizing WordPress plugins, automated workflows, and integrated REST 
